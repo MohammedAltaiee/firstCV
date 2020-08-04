@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 76, 76, 0.966);
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.p{
+    color: antiquewhite;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+/* table{
+    border: solid  ;
+    border-color: rgba(247, 82, 27, 0.466);
+} */
+
+td{
+     border: solid  ;
+     border-radius: 10%;
+    border-color: rgba(247, 82, 27, 0.466);
+    padding:1rem 3rem;
+    text-align: left;
+    }
+
+/* the header section will start from here  */
+header{
+    width: 100%;
+    height: 740px;
+    background-image: url(img/bacG4.jpeg);
+    background-size: cover;
+    background-position: top center;
+    position: relative; /*this make the change related to the postion  */
+    text-align: center;
+     z-index: 1;/*this will make the black transparant opacity in after go to inside and outside of the screen  */
+}
+#momo::after{
+    content: '';
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: black;
+opacity: 0.4;
+z-index: -1;
+}
+#momo .momo{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: 50px;
+}
+#momo h2{
+    display: block;
+    width: fit-content;
+    font-size: 3rem;
+    position: relative;
+    color: transparent;
+    animation: text_revealing .5s ease forwards;
+    animation-delay: 1s;
+}
+#momo h2:nth-child(1){
+    animation-delay: 1s;
+}
+#momo h2:nth-child(2){
+    animation-delay: 2s;
+    
+}
+#momo h2:nth-child(3){
+    animation: name_color 1s ease forwards;
+    animation-delay: 3s;
+}
+
+
+#momo h2 span{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: brown;
+    animation:revealing_box 1s ease ;
+    animation-delay: .5s;
+}
+#momo h2 span:nth-child(1){
+    animation-delay: .5s;
+}
+#momo h2 span:nth-child(2){
+    animation-delay: 1.5s;
+}
+#momo h2 span:nth-child(3){
+    animation-delay: 2.5s;
+}
+#momo .cta{
+    display: inline-block;
+    padding: 20px 30px;
+    color: brown;
+    background-color:transparent;
+    border: 4px solid brown;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    transition: .3s ease ;
+    transition-property: background-color, color;
+}
+#momo .cta:hover{
+    color: antiquewhite;
+    background-color: brown;
+}
+.profile_picture{
+    box-shadow: black 5px;
+    width: 200px;
+    border-radius: 100%;
+}
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(43, 42, 42, 0.315);
+}
+.container{
+    min-height: 640px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    width: 20%;
+    margin: auto;
+    color: aliceblue;
+    border: none ;
+    border-width: 10px;
+    border-top-color: rgba(233, 150, 122, 0.623);
+    border-top-style: dotted;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+    color: brown;
+}
+h2{
+    color: brown;
+}
+/* end of the header section  */
+/* the main section will start from here   */
+
+main .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+main .section-title{
+    font-size: 3rem;
+    font-weight: 300;
+    color: antiquewhite;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+    
+}
+main .section-title span{
+    color: brown;
+}
+main .lang table{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5em;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    background-color: black;
+}
+main .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main .item-info{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(img/card.jpeg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 12px rgba(43, 42, 42, 0.315);
+
+}
+main .item-info::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(brown, rgb(22, 1, 1));
+    opacity: 0.2;
+    z-index: -1;
+
+}
+main .item-info .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+main .item-info .info img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+table{
+    table-layout: auto;
+    margin: auto;
+}
+main .item-info h2{
+    font-size: 2rem;
+    color: brown;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+/* the end of the main section  */
+
+
+/* keyframes is the animation of the movement of the box on the top of the h2 and it will apply when the page will load  */
+@keyframes revealing_box{
+    50%{width:100% ;
+    left:0 ;}
+    100%{width:0 ;
+    left: 100%;}
+}
+@keyframes text_revealing{/* this will give an animation of color changing when the page will load and transform the color from tranparant to this color and should be applyed in #momo h2 in animation */ 
+    100%{
+        color: antiquewhite;
+    }
+}
+@keyframes name_color{
+    100%{
+        font-weight: 500;
+        color: brown;
+    }
+}
