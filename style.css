@@ -648,6 +648,7 @@ margin-bottom: 10px;
     justify-content: center;
     list-style-type: none;
 }
+}
 /* mediaquerry for tablet  */
 @media only screen and (min-width:768px){
     /* to increase the size of the botton  */
