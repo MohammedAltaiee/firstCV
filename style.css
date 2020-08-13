@@ -24,6 +24,10 @@ img{
     text-align: left;
     font-size: 1.2rem;
     line-height: 1.8rem;
+    
+}
+.langP{
+    margin: 20px;
 }
 .section-title{
     font-size: 3rem;
@@ -69,13 +73,20 @@ img{
     }
 
 td{
-     border: solid  ;
+     border: transparent;
      border-radius: 10%;
-    border-color: rgba(247, 82, 27, 0.466);
-    padding:1rem 3rem;
+    border-color: rgba(165, 164, 163, 0.671);
+    padding:50px 20px;
     text-align: left;
     }
-
+.years{
+   
+    padding:20px 20px;
+    text-align: left;
+    flex-wrap: nowrap;
+    justify-items: center;
+   
+}
     /* this is the nav bar section  */
 #header {
     position: fixed;
@@ -330,6 +341,12 @@ main .lang table{
     letter-spacing: .05rem;
     background-color: black;
 }
+ #mains .services .lang .p ul {
+     text-align: center;
+     justify-content: center;
+     
+
+ }
 main .info{
     display: flex;
     align-items: center;
@@ -344,7 +361,7 @@ main .item-info{
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: linear-gradient(rgb(250, 250, 250) , rgb(45, 61, 82),black);
+    background-image:linear-gradient(60deg, #29323c 0%, #485563 100%);
     background-size: cover;
     margin: 10px 5%;
     position: relative;
@@ -359,7 +376,7 @@ main .item-info::after{
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(brown, rgb(22, 1, 1));
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     opacity: 0.2;
     z-index: -5;
 
@@ -459,7 +476,7 @@ padding: 100px 0;
     transition: .3s ease transform;
 }
 #projects .project-item:hover .project-img img{
-    transform: scale(1.1);
+    transform:scale(1.1) ;
 }
 
 
@@ -604,7 +621,7 @@ margin-bottom: 10px;
     }
     100%{
         opacity: 0;
-        transform: scale(1.3);
+        transform: scale(1.9);
     }
 }
 @keyframes revealing_box{
@@ -624,9 +641,23 @@ margin-bottom: 10px;
         color: brown;
     }
 }
+/* media for the phone */
+@media only screen and (min-width:400px) {
+#mains .services .lang .p ul {
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+}
 /* mediaquerry for tablet  */
 @media only screen and (min-width:768px){
     /* to increase the size of the botton  */
+    #mains .services .lang .p ul {
+        text-align: center;
+        justify-content: center;
+        list-style-type: none;
+       
+
+    }
     .cta{
         font-size: 2.5rem;
         padding: 20px 60px;
